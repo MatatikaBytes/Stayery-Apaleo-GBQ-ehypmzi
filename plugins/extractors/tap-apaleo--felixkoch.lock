@@ -1,0 +1,48 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-apaleo",
+  "namespace": "tap_apaleo",
+  "variant": "felixkoch",
+  "label": "Apaleo",
+  "docs": "https://www.matatika.com/data-details/tap-apaleo/",
+  "repo": "https://github.com/felixkoch/tap-apaleo",
+  "pip_url": "git+https://github.com/felixkoch/tap-apaleo.git",
+  "description": "Apaleo is a cloud-based hotel management system.\n\nApaleo provides a comprehensive hotel management system that allows hotels to manage their operations, bookings, and guest data all in one place. The system is cloud-based, making it accessible from anywhere, and it is designed to be flexible and customizable to meet the unique needs of each hotel. With Apaleo, hotels can streamline their operations, improve guest experiences, and increase revenue.",
+  "logo_url": "https://app.matatika.com/assets/logos/extractors/apaleo.png",
+  "capabilities": [
+    "stream-maps",
+    "discover",
+    "state",
+    "about",
+    "catalog"
+  ],
+  "settings": [
+    {
+      "name": "client_id",
+      "kind": "string",
+      "label": "Client Id",
+      "description": "A unique identifier for the client application connecting to the Apaleo API.",
+      "hidden": false,
+      "sensitive": true,
+      "protected": false
+    },
+    {
+      "name": "client_secret",
+      "kind": "string",
+      "label": "Client Secret",
+      "description": "A secret key used to authenticate the client application when connecting to the Apaleo API.",
+      "hidden": false,
+      "sensitive": true,
+      "protected": false
+    },
+    {
+      "name": "start_date",
+      "kind": "string",
+      "label": "Start Date",
+      "description": "The start date for the data that the client application wants to retrieve from the Apaleo API.",
+      "hidden": false,
+      "sensitive": false,
+      "protected": false
+    }
+  ]
+}
